@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.back{
+    height:250px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(data:image/jpeg;base64,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)center/cover no-repeat;
+    
+    }
+    *{
+        padding:0;margin:0;box-sizing: border-box;
+    }
+    
+    
+    nav{
+        height:50px;
+        width:100%;
+        background-color: rgb(0, 0, 0);
+    }
+    ul{
+     height:100%;
+     width: 100%;
+     display:flex;
+     justify-content:center; 
+     align-items: center;
+     
+    }
+    li{
+        margin-left:55px;
+        list-style:none;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .menu{
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    opacity:.5;
+    }
+    li:hover{
+        background-color: rgb(19, 16, 16);
+    }
+    .menu:hover{
+        opacity:1;
+    }
+    span{
+        font-size: 70px;
+        font-weight: bolder;
+        letter-spacing: 7px;
+        background-image: linear-gradient(brown,blue,pink);
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+.container{
+    margin:0 auto;
+    max-width:990px;
+    padding:0 10px;
+    background-color: rgb(120, 144, 165);
+    
+} 
+.blok{
+    margin-top:300px;
+
+    
+    }
+.blok h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 3px;
+    animation:www 4s forwards ;
+    transform: translateX(-100%);
+    opacity:0;
+    filter:blur(5px);
+    position: relative;
+
+}
+ @keyframes www{
+100%{
+    transform: translateX(0);
+    opacity:1;
+    filter:blur(0px);
+}
+
+
+ }  
+html{
+    font-family:fantasy;
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 30px;
+    animation:yyy 4s forwards;
+    transform:translateX(100%);
+    opacity:0;
+    filter: blur(5px);
+    position:relative;
+    
+}
+@keyframes yyy{
+    100%{
+
+        transform: translateX(0);
+        opacity:1;
+        filter: blur(0px);
+    }
+}
+.gal{
+text-align: center;
+margin-top: 50px;
+
+}
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 3px;
+
+
+}
+.pic{
+width: 30%;
+height: 250px;
+
+
+}
+img{
+width: 100%;
+height: 100%;
+}
+h1{text-align: center;
+margin-top: 50px;}
+n.{
+margin:0 auto;
+background-color: blue;
+}
+.new{
+display: block;
+margin:0 auto;
+width: 90%;
+height: 550px;
+}
+.info{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 15px;
+}
+.infonew{
+width: 50%;
+padding: 10px;
+text-align: center;
+}
+.photo{
+width: 50%;
+
+}
+.newpic{
+width: 100%;
+height: 100%;
+
+}
+.text{
+ text-align: center;  
+ padding: 15px; 
+}
+header{
+position: fixed;
+width: 100%;top: 0;left: 0;
+z-index: 9;
+}
+body{  
+background-image: linear-gradient(to bottom, blue,yellow);
+
+
+}
+.mer{
+ text-align: center;   
+}
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <header>
+<div class = "back"><span></span></div>
+<nav>
+<ul>
+<li><a class="menu" href ="#a">Відео</a></li>
+<li><a  class="menu" href ="#y">Удари</a></li>
+<li><a class="menu"  href ="#b">Галерея</a></li>
+<li><a  class="menu" href ="#g">Інформація</a></li>
+</ul>
+
+</nav>
+
+ </header>
+ <main>
+<div class = "container">
+<div class = "blok">
+<h1>Бокс </h1>
+<p> Це контактний вид спорту, єдиноборство, в якому спортсмени наносять один одному удари кулаками в спеціальних рукавичках. Рефері контролює бій, який триває до 12 раундів. Перемога боксера у випадку, якщо суперник збитий з ніг і не може піднятися протягом десяти секунд (нокаут) або якщо він отримав травму, яка не дозволяє продовжувати бій (технічний нокаут). Якщо після встановленої кількості раундів поєдинок не був припинений, то переможець визначається оцінками суддів.
+
+Найбільш ранні свідоцтва подібних змагань відображені ще на шумерських, єгипетських і мінойських рельєфах. Турніри з кулачних боїв, що нагадує бокс, проходили ще в Стародавній Греції. По-справжньому бокс став спортивним єдиноборством в 688 році до н. е., коли кулачні бої були вперше включені в програму античних Олімпійських ігор. Сучасний бокс зародився в Англії на початку XVIII століття.</p>
+
+
+</div>
+<h1 id="b" class="gal">Галерея</h1>
+<div class="box">
+
+<div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPj6GEt0vzaYfVtwBXyT3Pr3tsxLYJzGV1g&usqp=CAU"></div>
+<div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVDIqLTX0Hi_IGizjbF-uPUnqRrVxFjvxHg&usqp=CAU"></div>
+<div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO72OLh_nDcqFC7OrkeqsQxI7ZjYt6EqmNQA&usqp=CAU"></div>
+<div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5r4MVJCEefH1d3D-jpt0HSeRQ12sNSHsC_QgGgic4OnOIYdn9S03lzAG_-9kBXBgvFw&usqp=CAU"></div>
+<div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpENsgeOdtc8fZqnmaY1xjP-InTIUa0SaOWA&usqp=CAU"></div>
+<div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH9vd5yuRptp2_XLo8EcwgYLFCSskvLKayGw&usqp=CAU"></div>
+</div>
+<div class="video">
+<h1 id="a" >Відео про бокс</h1>
+
+<iframe class="new" src="https://www.youtube.com/embed/gRRkvgbevYU" title="5 САМЫХ ОЖИДАЕМЫХ БОЕВ БОКСА в 2022 ГОДУ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+</div>
+
+<h1 id="y">Хук</h1>
+<div class="info">
+
+<div class="infonew">Хук— це вид удару рукою, що належить до основних елементів ударної техніки таких бойових мистецтв, як бокс, кікбоксинг, тайський бокс та інших. Хук — це короткий фланговий, боковий удар, що виконується і ближньою і дальньою відносно суперника рукою. Техніка виконання: рука, зігнута в лікті, викидається по дузі в ціль; у процесі завдання удару корпус повертається на 90°, зміщаючи центр ваги на бік, протилежний руці, якою завдають удар; у момент удару кулак тримається в горизонтальному або вертикальному положенні. Хук завдається в корпус (тулуб) і в голову, використовується як атакувальний удар (з місця, з присіданням, в стрибку) і як контрудар (на короткій дистанції), може бути одиночним і виконуватися в комбінації.</div>
+<div class="photo"><img class="newpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Crochet5.jpg/99px-Crochet5.jpg"></div>
+
+
+</div>
+<h1>Аперкот</h1>
+<div class="info">
+<div class="photo"><img class="newpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Crochet5.jpg/99px-Crochet5.jpg"></div>
+<div class="infonew">Аперкот — классический удар из традиционного бокса; наносится кулаком по внутренней траектории, при этом кулак повёрнут на себя; используется в ближнем бою. Название апперкот происходит от английского словосочетания, которое переводят как «рубануть снизу вверх». В СССР с 1940-х гг. иностранная терминология, включая английские названия ударов (хук, джеб, кросс, свинг), были практически полностью исключены из спортивного лексикона в рамках кампании по борьбе с «низкопоклонством перед Западом», исключение было сделано для апперкота, поскольку у переводивших не нашлось подходящего словесного эквивалента, чтобы просто и понятно описать этот нехитрый удар.</div>
+</div>
+<h1>Джеб</h1>
+<div class="info">
+
+<div class="infonew">Джеб - це вид удару рукою, що належить до основних елементів ударної техніки таких бойових мистецтв, як бокс, кікбоксинг, тайський бокс, карате та інших. Джеб — це довгий прямий удар, що виконується ближньою відносно суперника рукою. Техніка виконання: рука, повністю розгинаючись, викидається вперед, у ціль; у момент удару вага тіла переноситься на ближню відносно суперника ногу; кулак тримається в горизонтальному положенні. Джеб завдають у корпус (тулуб) і в голову, використовується як атакувальний удар (з місця, з присіданням, в кроці) і як контрудар (назустріч або на випередження), може бути одиночним і виконуватися в комбінації.</div>
+<div class="photo"><img class="newpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Direct_corps1.jpg/120px-Direct_corps1.jpg"></div>
+</div>
+
+<h1>Свінг</h1>
+<div class="info">
+<div class="photo"><img class="newpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Swing1.jpg/120px-Swing1.jpg"></div>
+<div class="infonew">Свінг - це вид удару рукою, що належить до основних елементів ударної техніки таких бойових мистецтв, як бокс, кікбоксинг, тайський бокс та інших. Свінг — це довгий фланговий, боковий удар, що виконується і ближньою, і дальньою відносно суперника рукою. Техніка виконання: рука, зігнута в лікті, викидається по дузі в ціль; в процесі завдання удару корпус повертається паралельно вектору удару і вниз, зміщуючи центр ваги на бік, протилежний руці, якою наноситься удар; в мить удару кулак тримається в горизонтальному або вертикальному положенні</div>
+</div>
+<h1>Кросс</h1>
+<div class="info">
+
+<div class="infonew">Крос — це вид удару рукою, що належить до основних елементів ударної техніки таких бойових мистецтв, як бокс, кікбоксинг, карате та інших. Крос — це довгий прямий удар, що виконується дальньою відносно суперника рукою.</div>
+<div class="photo"><img class="newpic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwz5maz9jNQXICH0BPPKwg-JZPWh4HJGZtg&usqp=CAU"></div>
+</div>
+
+<p> fdfdfdh dsjdsjdsj jdshjshdsa jsahjdshjdsa shhhdsa hdsajhsahsahbsa</p>
+
+
+</div>
+
+
+
+
+<h1 id="g">Інформація</h1>
+<footer> <p class="mer">якщо будуть питання звертатися сюда</p>
+ <p class="mer" > Моя пошта:fedoryukbogdan2010@gmail.com</p>
+
+</footer>
+ </main>
+  
+</body>
+</html>
